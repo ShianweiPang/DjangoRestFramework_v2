@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'rest_framework',
+    'rest_framework.authtoken', # for phone devices, where cannot use session. This need database to store token. Need to migrate after saving the settings
 ]
 
 MIDDLEWARE = [
